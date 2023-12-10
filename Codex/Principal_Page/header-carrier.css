@@ -1,0 +1,56 @@
+header{
+    background-color: black;
+    overflow: hidden;
+    z-index: 2;
+}
+.header_container{
+    text-align: center;
+    color: white;
+    background: transparent;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0)) 
+    url(https://flxt.tmsimg.com/assets/p12565017_p_v8_au.jpg) center/contain no-repeat;
+    animation: changeBackground 6s infinite;
+    background-size: contain;
+    object-fit: cover;
+    justify-content: center;
+    pointer-events: auto;
+}
+.header_container.menu-open{
+    pointer-events: none;
+}
+.header_container background{
+    object-fit: cover;
+    animation: changeBackground .6s infinite;
+}
+.header_container.show{
+    opacity: 0;
+}
+.presentacion{
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes changeBackground{
+    0%, 15% {
+        background: url(https://flxt.tmsimg.com/assets/p12565017_p_v8_au.jpg) center/contain no-repeat;
+    }
+    20%, 35% {
+        background: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/DEF9D0B9B55086CCC43AF4FDCF23757CB25FBCC56BFEE68F3CB927427BF9E5E5/scale?width=1200&aspectRatio=1.78&format=jpeg) center/contain no-repeat;
+    }
+    40%, 55% {
+        background: url(https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg) center/contain no-repeat;
+    }
+    60%, 75% {
+        background: url(https://miro.medium.com/v2/resize:fit:1358/1*urWDB_P-sSdahWPl59n-gw.jpeg) center/contain no-repeat;
+    }
+    80%, 100% {
+        background: url(https://lieve.co/wp-content/uploads/2023/05/super_mario_bros_movie_poster.jpg) center/contain no-repeat;
+    }
+}

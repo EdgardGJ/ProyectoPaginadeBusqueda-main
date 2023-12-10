@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="Formulario_style.css">
+   <link rel="icon" href="../../media/reelInsiderIcon.png">
+    <title>ReelInsider|Registrarse</title>
+    <script type="module" src="firebase_user.js"></script>
+</head>
+<body>
+    <section class="form-main">
+        <div class="form-content">
+            <div class="box">
+                <h3>Crear Cuenta</h3>
+                <form action="" id="formulario-de-registro">
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder="Nombre Completo" class="input-control">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="Email" class="input-control">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Contraseña" class="input-control">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password-confirm" placeholder="Confirmar Contraseña" class="input-control">
+                    </div>
+                    <button type="submit" class="btn">Crear Cuenta</button>
+                </form>
+                <p> <em class="text-question">¿Ya tienes cuentas?</em> <a href="login.html" class="gradient-text">Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Import the functions you need from the SDKs you need
+  import { initializeApp } from "firebase/app";
+  import { getAnalytics } from "firebase/analytics";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDqExD2gv9ugYQz9m5jbzL83i2fRWjR10o",
+    authDomain: "userdates-1b0fa.firebaseapp.com",
+    projectId: "userdates-1b0fa",
+    storageBucket: "userdates-1b0fa.appspot.com",
+    messagingSenderId: "736232552858",
+    appId: "1:736232552858:web:7e893623875938cacfe223",
+    measurementId: "G-WMWKKW9716"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+    </script>
+</body>
+</html>
